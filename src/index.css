@@ -3,6 +3,11 @@ html {
   padding: 0;
   background: #13262F;
 }
+::-webkit-scrollbar{
+  display: none;
+  width: 8px;
+  color: #fff;
+}
 
 body {
   margin: 0;
