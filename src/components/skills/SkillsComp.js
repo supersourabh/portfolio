@@ -19,7 +19,7 @@ export default function SkillsComp() {
   return (
     <div title="skills" className="p-2 ">
       <div className="font-bold text-2xl mt-4 p-2">My Skills</div>
-      <div className="flex justify-center lg:justify-start items-end w-full flex-wrap border-b-2">
+      <div className="flex justify-center lg:justify-start items-end w-full flex-wrap lg:border-b-2">
         {skillsList.map((category, index) => (
           <SkillCardComp
             key={index}

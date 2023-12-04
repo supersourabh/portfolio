@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileAndNameComp from "./ProfileAndNameComp";
-import ProjectsComp from "./ProjectsComp";
+import ProjectsComp from "./project/ProjectsComp";
 import SkillsComp from "./skills/SkillsComp";
 
 export default function MainSectionComp() {
