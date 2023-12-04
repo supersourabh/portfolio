@@ -14,6 +14,7 @@ function App() {
 
           <Route Component={HeaderComp}>
             <Route path="/" Component={Home}></Route>
+            {/* <Route path="/portfolio" Component={Home}></Route> */}
             <Route path="/skill" Component={skills}></Route>
             <Route path="/*" Component={NotFound}></Route>
           </Route>
