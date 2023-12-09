@@ -15,7 +15,6 @@ export default function SkillsComp() {
       Others: process.env.REACT_APP_OTHERS_SKILLS.split(","),
     },
   ];
-  console.log(skillsList);
   return (
     <div title="skills" className="p-2 ">
       <div className="font-bold text-2xl mt-4 p-2">My Skills</div>

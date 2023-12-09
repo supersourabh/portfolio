@@ -15,12 +15,12 @@ export default function SkillCardComp(props) {
   };
   return (
     <ul
-      key={key}
       className={`flex w-60 flex-wrap rounded-3xl lg:my-2 p-2 m-2 shadow-[inset_-20px_-12px_90px_${color(
         false
       )}56]`}
     >
       <li
+        key={key}
         className={`w-full flex justify-center align-center text-xl font-semibold p-2 shadow rounded-xl`}
       >
         {category}
