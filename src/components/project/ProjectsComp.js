@@ -1,10 +1,11 @@
 import React from "react";
 import projects from "../../assets/data/projectData.json";
+import { isDisabled } from "@testing-library/user-event/dist/utils";
 
 export default function ProjectsComp() {
   function truncate(data) {
     console.log(data.length);
-    return parseInt(data.length) < 70 ? data : data.substring(0, 90)+"...";
+    return parseInt(data.length) < 100 ? data : data.substring(0, 100) + "...";
   }
   return (
     <div className="w-full mt-5 lg:mt-10">
@@ -24,16 +25,33 @@ export default function ProjectsComp() {
                 />
               </div>
               <div className="p-4 pt-2 h-auto overflow-hidden">
-                <div className="font-bold">{project.name}</div>
-                {/* <TextTruncate line={3} text={project.discription} /> */}
-                <p style={{ overflow: "hidden", textOverflow: "ellipsis" }}>
+                <div
+                  className={`${
+                    project.name == "Working"
+                      ? "text-cyan-500"
+                      : "text-yellow-500"
+                  } font-bold `}
+                >
+                  {project.name}
+                </div>
+                <p
+                  className="font-thin"
+                  style={{ overflow: "hidden", textOverflow: "ellipsis" }}
+                >
+                  <span className="font-normal underline">Skills Used</span> :{" "}
                   {truncate(project.discription)}
                 </p>
                 <button
                   id="more"
-                  className=" mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  onClick={()=>window.open(project.repo)}
+                  disabled={project.name == "Working" ? true : false}
+                  className={`${
+                    project.name != "Working"
+                      ? "bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                      : "bg-gray-500"
+                  } mt-2 text-white  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 `}
                 >
-                  More
+                  Repo
                 </button>
               </div>
             </li>
