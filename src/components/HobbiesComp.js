@@ -6,7 +6,7 @@ export default function HobbiesComp() {
     <div className="py-5">
       <div className="text-2xl font-bold w-full">Hobbies</div>
       <div>
-        <ul className="flex flex-wrap w-full justify-start p-2 ">
+        <ul className="flex flex-wrap w-full justify-center lg:justify-start p-2 ">
           {hobbies.map((hobbie, key) => (
             <li className="group relative w-auto h-48 m-2 lg:mr-6 overflow-hidden">
               <div className="absolute flex justify-center items-center w-full h-full p-5 t">
