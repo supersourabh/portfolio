@@ -13,22 +13,28 @@ export default function ProfileAndNameComp() {
         <div className="flex flex-col justify-center px-5 w-1/2">
           <p className=" text-4xl"> {process.env.REACT_APP_NAME}</p>
           <p className="flex items-center justify-start my-1">
-            {process.env.REACT_APP_CURRENT_ROLE } @
+            {process.env.REACT_APP_CURRENT_ROLE} @
             <span className="rounded-lg px-2 py-auto mx-1 bg-gray-500">
               {process.env.REACT_APP_CURRENT_COMPANY}
             </span>
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center w-auto">
+      <div className=" flex justify-center items-center w-auto">
         <a
           href={process.env.REACT_APP_MAIL_URL}
-          className=" flex bg-yellow-900 p-2 rounded-lg text-center"
+          className="relative flex bg-yellow-900 p-2 rounded-lg text-center"
         >
           <span className="text-center py-1 px-2 ">
             <FaAt color="yellow" />
           </span>
           Contact on my Mail
+          <span className="absolute -top-1 -right-1">
+            <span class="relative flex h-3 w-3 ">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+            </span>
+          </span>
         </a>
       </div>
     </div>

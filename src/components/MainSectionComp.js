@@ -3,6 +3,7 @@ import ProfileAndNameComp from "./ProfileAndNameComp";
 import ProjectsComp from "./ProjectsComp";
 import SkillsComp from "./skills/SkillsComp";
 import HobbiesComp from "./HobbiesComp";
+import CertificateComp from "./CertificateComp";
 
 export default function MainSectionComp() {
   return (
@@ -12,6 +13,7 @@ export default function MainSectionComp() {
         <SkillsComp />
         <ProjectsComp />
         <HobbiesComp />
+        <CertificateComp />
       </div>
       <div></div>
     </section>

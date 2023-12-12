@@ -29,23 +29,23 @@ code {
   font-size: 20px;
 }
 #dot1 {
-  animation: opacity 2s infinite ease-in-out;
-  animation-delay: -1s;
+  animation: opacity 2s infinite ease-in-out 1s;
 }
 #dot2 {
-  animation: opacity 2s infinite ease-in-out;
-  animation-delay: 0s;
+  animation: opacity 2s infinite ease-in-out 1.5s;
 }
 #dot3 {
-  animation: opacity 2s infinite ease-in-out;
-  animation-delay: 1s;
+  animation: opacity 2s infinite ease-in-out 2s;
 }
 
 @keyframes opacity {
-  from {
+  0% {
     opacity: 0.1;
   }
-  to {
+  50% {
     opacity : 1;
+  }
+  100%{
+    opacity : .1;
   }
 }
