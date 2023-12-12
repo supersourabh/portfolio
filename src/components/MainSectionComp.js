@@ -1,7 +1,8 @@
 import React from "react";
 import ProfileAndNameComp from "./ProfileAndNameComp";
-import ProjectsComp from "./project/ProjectsComp";
+import ProjectsComp from "./ProjectsComp";
 import SkillsComp from "./skills/SkillsComp";
+import HobbiesComp from "./HobbiesComp";
 
 export default function MainSectionComp() {
   return (
@@ -10,6 +11,7 @@ export default function MainSectionComp() {
         <ProfileAndNameComp />
         <SkillsComp />
         <ProjectsComp />
+        <HobbiesComp />
       </div>
       <div></div>
     </section>

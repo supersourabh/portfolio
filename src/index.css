@@ -1,9 +1,9 @@
 html {
   margin: 0;
   padding: 0;
-  background: #13262F;
+  background: #13262f;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
   width: 8px;
   color: #fff;
@@ -11,14 +11,41 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* project animation */
+.dots {
+  border-radius: 50%;
+  font-size: 20px;
+}
+#dot1 {
+  animation: opacity 2s infinite ease-in-out;
+  animation-delay: -1s;
+}
+#dot2 {
+  animation: opacity 2s infinite ease-in-out;
+  animation-delay: 0s;
+}
+#dot3 {
+  animation: opacity 2s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity : 1;
+  }
 }
