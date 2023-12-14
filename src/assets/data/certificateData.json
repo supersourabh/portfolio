@@ -1,12 +1,44 @@
 [
   {
     "name": "Azure Fundamenals",
-    "certificate": "",
-    "category": "DevOps"
+    "certificate": "https://images.credly.com/size/230x250/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png",
+    "category": "DevOps",
+    "provider": "Microsoft"
   },
   {
     "name": "Ansible Basics(Udemy)",
-    "certificate": "",
-    "category": "DevOps"
+    "certificate": "https://udemy-certificate.s3.amazonaws.com/image/UC-7dd9b1f7-c64d-40c5-967a-51db5b8e5154.jpg",
+    "category": "DevOps",
+    "provider": "Udemy"
+  },
+  {
+    "name": "DevOps Hands-On(Udemy)",
+    "certificate": "https://udemy-certificate.s3.amazonaws.com/image/UC-e3bdafe0-983b-4389-9635-27f751232d11.jpg",
+    "category": "DevOps",
+    "provider": "Udemy"
+  },
+  {
+    "name": "Confluence(Udemy)",
+    "certificate": "https://udemy-certificate.s3.amazonaws.com/image/UC-76aa020d-0d2b-4750-a304-a64d47c6b2d7.jpg",
+    "category": "DevOps",
+    "provider": "Udemy"
+  },
+  {
+    "name": "Docker and Kubernetes (Udemy)",
+    "certificate": "https://udemy-certificate.s3.amazonaws.com/image/UC-5399394e-fc99-49ad-af70-8dfca1ed5906.jpg",
+    "category": "DevOps",
+    "provider": "Udemy"
+  },
+  {
+    "name": "Git and GitHub (Udemy)",
+    "certificate": "https://udemy-certificate.s3.amazonaws.com/image/UC-5ee34299-d58e-4a24-9a93-7bc904cbe414.jpg",
+    "category": "DevOps",
+    "provider": "Udemy"
+  },
+  {
+    "name": "GitLab (Udemy)",
+    "certificate": "https://udemy-certificate.s3.amazonaws.com/image/UC-fda9a8b2-fbe3-4413-9e68-0ea59171690c.jpg",
+    "category": "DevOps",
+    "provider": "Udemy"
   }
 ]
