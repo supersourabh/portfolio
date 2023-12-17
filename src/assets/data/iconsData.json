@@ -1,0 +1,32 @@
+[
+    {
+      name: "GitHub",
+      link: process.env.REACT_APP_GITHUB_URL,
+      icon: github,
+    },
+    {
+      name: "LinkedIn",
+      link: process.env.REACT_APP_LINKEDIN_URL,
+      icon: linkedin,
+    },
+    {
+      name: "Instagram",
+      link: process.env.REACT_APP_INSTAGRAM_URL,
+      icon: instagram,
+    },
+    {
+      name: "Whatsapp",
+      link: process.env.REACT_APP_WHATSAPP_URL,
+      icon: whatsapp,
+    },
+    {
+      name: "Mail",
+      link: process.env.REACT_APP_MAIL_URL,
+      icon: mail,
+    },
+    {
+      name: "Mobile",
+      link: process.env.REACT_APP_MOBILE_NUMBER,
+      icon: mobile,
+    },
+  ];
