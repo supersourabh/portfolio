@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 export default function HeaderComp() {
   return (
     <>
-      <header className="sticky top-0 backdrop-blur z-10">
+      <header className="sticky top-0 backdrop-blur z-50">
         <nav className=" h-auto rounded-xl">
           <div className="h-28 w-full">
             <a href="/" className="flex items-center justify-start pl-5 lg:pl-16 h-28 w-full overflow-hidden object-cover" style={{fontFamily: 'Shadows Into Light'}} >
